@@ -1,0 +1,73 @@
+Am Pragna Manjuanth from AI department. I started coding from 1st year and the language.
+My journey with programming started with learning the basics of C++ and Python. At the begining, I focused on understanding simple concepts like loops, conditionals, and functions. Slowly I started solving more problems and improving my logical thinking.
+I am more comfortable with C++ when it comes to problem solving and writing structured programs. I have practiced things like arrays and basic data structures. Along with that, I use Python for writing simpler programs and sometimes for mathematical computations using libraries like NumPy and SymPy.
+Most of my experience till now is solving problems and writing small programs. I havent worked on big projects yet, but recently I started exploring how real software systems work, like how websites and databases function.
+What motivated me to start programming was curiosity. I always wanted to know how apps and systems actually work behind the scenes, and that made me interested in learning coding.
+I am applying to the Software Development vertical because I want to learn how to build real world applications. Till now, my experience is mostly in Python and C++, but I want to move beyond that and understand how complete systems are built.
+I havent participated in any hackathons yet. But I am planning to take part in some hackathons this year to gain experience.
+
+3.1
+Client-server architecture is a system where the client (like a browser or app) sends a request and the server processes it and sends back a response. The client mainly handles the user interface, while the server handles logic, data storage, and processing.
+When I enter a URL in the browser, first it checks if the page is already in cache. If not, it does a DNS lookup to convert the domain name into an IP address. After getting the IP, the browser establishes a connection with the server using TCP, and if it is a secure website, SSL/TLS handshake also happens.
+Then the browser sends an HTTP request (mostly GET request) to the server. The server processes it, may interact with a database, and sends back an HTTP response which contains HTML, CSS, and JavaScript. After that, the browser renders the page by building the DOM and displays it to the user.
+To manage heavy traffic, we use techniques like load balancing, caching, and CDNs. Load balancing distributes traffic across multiple servers, caching reduces repeated work, and CDNs help deliver content faster from nearby locations.
+There are two types of scaling:
+Vertical scaling means increasing the power of a single server (more RAM, CPU).
+Horizontal scaling means adding multiple servers and distributing the load between them.
+
+3.2
+APIs (Application Programming Interfaces) are used for communication between different software systems. They allow one application to request data or services from another.
+APIs are important because they help in connecting frontend and backend, allow reuse of services, and make development faster.
+RESTful APIs follow a standard way of designing APIs using HTTP methods and URLs. In REST, everything is treated as a resource.
+The main CRUD operations are:
+GET is used to fetch data from the server.
+POST is used to create new data.
+PUT is used to update existing data.
+DELETE is used to remove data.
+These methods make APIs easy to understand and use.
+
+3.3
+There are mainly two types of databases: SQL and NoSQL.
+SQL databases are relational and store data in tables with rows and columns. Examples are PostgreSQL and MySQL. They are useful when data is structured and relationships are important.
+NoSQL databases store data in flexible formats like JSON. Examples are MongoDB and Firebase. They are useful when data is unstructured or when high scalability is needed.
+A SQL database consists of tables, rows, columns, indexes, and relationships using foreign keys.
+SQL databases use B-Trees for indexing. B-Tree is a structure that keeps data sorted and helps in fast searching. Because of this, SELECT queries become faster.
+But during heavy INSERT operations, having many indexes slows down performance. This is because every insert also needs to update all indexes.
+When a B-Tree node becomes full, it splits into two nodes. This causes extra work like moving data, updating pointers, and writing changes to disk.
+Physically on disk, this means more disk operations, rewriting of pages, and rebalancing of the tree. Because of this, write operations become slower when too many indexes are present.
+
+3.4
+Git is a version control system used to track changes in code.
+Git merge and git rebase are used to combine changes from one branch to another. Git merge combines branches and creates a merge commit, keeping the full history. Git rebase rewrites history and makes it more linear and clean.
+In Git, each commit is stored as an object which contains the snapshot of files, author details, timestamp, and the parent commit.
+The commit hash is generated based on all this information.
+When we do rebase, the parent commit changes. Even if the code is same, the parent reference is different. Because the hash depends on all the data including parent, the commit hash also changes.
+So a commit is not just the data, it also depends on its position in the history.
+
+4.1
+Since I am more comfortable with Python, I would prefer:
+Frontend: Basic HTML, CSS, JavaScript (or simple React if possible)
+Backend: Flask (Python)
+Database: PostgreSQL
+APIs: News API + Gemini API
+
+4.2
+1. News Integration
+I will create a home page that fetches latest news using a News API. The backend will send a request to the API and return the data to the frontend.
+For search functionality, I will allow users to enter keywords or select categories like technology or science, and fetch filtered results from the API.
+
+2. AI Implementation
+For AI summaries, I will integrate Gemini API. When a user clicks on a button, the backend will send the article content to the AI and get a short 2-line summary.
+This summary will be displayed along with the news article. Each article will also have a link to the original source.
+
+3. Authentication & User Accounts
+I will implement a basic login system using email and password. Each user will have their own session so their data remains private.
+If possible, I will also explore OAuth login like Google, but basic authentication will be my priority.
+
+4. Database Integration
+I will use PostgreSQL to store user data and saved articles.
+There will be a “My Library” section where users can see all the articles they saved along with the AI summaries.
+
+5. Deployment
+If time permits, I will deploy the application using platforms like Render or Vercel so it can be accessed online.
+THANK YOU
